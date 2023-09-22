@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-img{
-    width: 1.2rem;
-}
-
 body{
     margin: 0;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
@@ -17,11 +13,15 @@ body{
 }
 
 aside{
-    background-color: #084b72; 
+    background-color: #084b72;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+img{
+    width: 1.2rem;
 }
 
 aside img{
@@ -46,7 +46,6 @@ h1 img{
     flex-direction: column;
     gap: 1rem;
     font-weight: 500;
-
 }
 
 .dashboard-list li{
@@ -58,8 +57,8 @@ h1 img{
 }
 
 .profile-topbar{
-    padding: 2rem 2rem 1.5rem 2rem;
-    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 2rem;
+    box-shadow: 0px  2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .searchbar{
@@ -127,7 +126,7 @@ h1 img{
 
 .content{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 2fr;
 }
 
 .projects-container{
@@ -135,47 +134,55 @@ h1 img{
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin: 1rem;
+    grid-template-rows: min-content;
 }
 
 .your-projects{
     grid-column: 1/-1;
     margin-bottom: 0;
 }
+
 .project{
     border-radius: 12px;
     box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-left: 12px solid #f0b429;
-    /* margin: 1rem; */
     display: grid;
 }
 
 .project-content{
     color: #636363;
 }
+
 .project-actions{
     display: flex;
     justify-self: end;
     gap: 1rem;
-    
+}
+
+.side-info-container{
+    margin-top: 1rem;
 }
 
 .annonucements-list{
     list-style-type: none;
     border-radius: 12px;
     box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.5);
-    margin-top: 2rem;
     padding: 1rem;
+    color: #636363;
 }
 
 .announcements{
-    margin: 1rem;
-    margin-top: 2rem;
+    margin: 1rem 1rem 0 0;
+}
+
+.announcements h3{
+    color: initial;
+    margin: .5em 0;
 }
 
 .trending{
-    margin: 1rem;
-
+    margin: 0 1rem 0 0;
 }
 
 .trending-list{
@@ -187,6 +194,7 @@ h1 img{
     box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     color: #636363;
+    align-items: center;
 }
 
 .sidebar-username{
