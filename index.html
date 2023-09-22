@@ -5,8 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+    </style> -->
 </head>
 <body>
-    
+    <div class="main-container">
+        <aside>
+            <h1><img src="assets/sidebar-assets/dashboard.svg" alt="dashboard-icon">Dashboard</h1>
+            <ul class="dashboard-list">
+                <li><img src="assets/sidebar-assets/home.svg" alt="home-icon">Home</li>
+                <li><img src="assets/sidebar-assets/profile.svg" alt="profile-icon">Profile</li>
+                <li><img src="assets/sidebar-assets/messages.svg" alt="messages-icon">Messages</li>
+                <li><img src="assets/sidebar-assets/history.svg" alt="history-icon">History</li>
+                <li><img src="assets/sidebar-assets/tasks.svg" alt="tasks-icon">Tasks</li>
+                <li><img src="assets/sidebar-assets/communities.svg" alt="communities">Communities</li>
+            </ul>
+            <ul class="dashboard-list">
+                <li><img src="assets/sidebar-assets/settings.svg" alt="settings">Settings</li>
+                <li><img src="assets/sidebar-assets/support.svg" alt="support">Support</li>
+                <li><img src="assets/sidebar-assets/privacy.svg" alt="privacy">Privacy</li>
+            </ul>
+        </aside>
+        <div class="dashboard">
+            <div class="profile-topbar">
+                <div class="searchbar">
+                    <img src="assets/magnify.svg" alt="Magnifying Glass Icon">
+                    <input type="search">
+                    <img src="assets/bell.svg" alt="Ringing Bell Icon">
+                    <img src="assets/profile-pictures/2.jpg" class="avatars" alt="morgan-oakley23258054-avatar">
+                    <span class="name">Morgan Oakley</span>
+                </div>
+                <div class="avatar-name-buttonsbar">
+                    <img src="assets/profile-pictures/2.jpg" class="avatars" alt="morgan-oakley23258054-avatar">
+                    <div class="username">
+                        <span class="greetings">Hi there,</span><br>
+                        <span>Morgan Oakley (@morgan)</span>
+                    </div>
+                    <button class="button">New</button>
+                    <button class="button">Upload</button>
+                    <button class="button">Share</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="projects-container">
+                    <h2 class="your-projects">Your Projects</h2>
+                    <div class="project">
+                        <h3>Super Cool Project</h3>
+                        <span class="project-content">Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nidb erat, id facilisis felis accumsan nec.
+                        </span>
+                        <div class="project-actions">
+                            <img src="assets/star-plus.svg" alt="Mark Important">
+                            <img src="assets/eye-plus.svg" alt="Add to Watchlist">
+                            <img src="assets/source-fork.svg" alt="Fork Code">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Less Cool Project</h3>
+                        <span class="project-content">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
+                            set dolor tincidunt, consectetur sapien et, facilisis dolor Duis sem purus, dignissim ut sapien in,
+                            varius pellentesque lacus.
+                        </span>
+                        <div class="project-actions">
+                            <img src="assets/star-plus.svg" alt="Mark Important">
+                            <img src="assets/eye-plus.svg" alt="Add to Watchlist">
+                            <img src="assets/source-fork.svg" alt="Fork Code">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Impossible App</h3>
+                        <span class="project-content">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, 
+                            a placerat velit sagittis id.
+                        </span>
+                        <div class="project-actions">
+                            <img src="assets/star-plus.svg" alt="Mark Important">
+                            <img src="assets/eye-plus.svg" alt="Add to Watchlist">
+                            <img src="assets/source-fork.svg" alt="Fork Code">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Easy Peasy App</h3>
+                        <span class="project-content">Etiam cursus eros acc efficitur fringilla. Vestibulum dignissim urna 
+                            eget accumsan aliquam. Curabitur dignissim nisi in toror commodo, ac bibendum magna tincidunt.
+                        </span>
+                        <div class="project-actions">
+                            <img src="assets/star-plus.svg" alt="Mark Important">
+                            <img src="assets/eye-plus.svg" alt="Add to Watchlist">
+                            <img src="assets/source-fork.svg" alt="Fork Code">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Ad Blocker</h3>
+                        <span class="project-content">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
+                            pharetra hendreit felis. Aliquam set malesuada eros.
+                        </span>
+                        <div class="project-actions">
+                            <img src="assets/star-plus.svg" alt="Mark Important">
+                            <img src="assets/eye-plus.svg" alt="Add to Watchlist">
+                            <img src="assets/source-fork.svg" alt="Fork Code">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Money Maker</h3>
+                        <span class="project-content">Praesent convallis, libero quis congue elementum nunc ante 
+                            faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.
+                        </span>
+                        <div class="project-actions">
+                            <img src="assets/star-plus.svg" alt="Mark Important">
+                            <img src="assets/eye-plus.svg" alt="Add to Watchlist">
+                            <img src="assets/source-fork.svg" alt="Fork Code">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-info-container">
+                    <div class="announcements">
+                        <h2>Announcements</h2>
+                        <ul class="annonucements-list">
+                            <li>
+                                <h3 class="announcement-title">Site Maintenance</h3>
+                                Vestibulum condimentum tellus lacus, in accumsan 
+                                    elit maximus ac. Donec hendrerit sodales congue...
+                            </li>
+                            <li>
+                                <h3 class="announcement-title">Community Share Day</h3>
+                                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. 
+                                    Aliquam dictum accumsan porttitor...
+                            </li>
+                            <li>
+                                <h3 class="announcement-title">Updated Privacy Policy</h3>
+                                Phasellus efficitur nisi eget elit consectetur eget condimentum 
+                                    ante auctor. Cras fringilla sagittis sem in mattis...
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trending">
+                        <h2>Trending</h2>
+                        <ul class="trending-list">
+                            <img src="assets/profile-pictures/1.jpg" class="avatars">
+                            <li>
+                                <div class="sidebar-username">@tegan</div>
+                                World Peace Builder
+                            </li>
+                            <img src="assets/profile-pictures/2.jpg" class="avatars">
+                            <li>
+                                <div class="sidebar-username">@morgan</div>
+                                Super Cool Project
+                            </li>
+                            <img src="assets/profile-pictures/7.jpg" class="avatars">
+                            <li>
+                                <div class="sidebar-username">@kendall</div>
+                                Life Changing App
+                            </li>
+                            <img src="assets/profile-pictures/8.jpg" class="avatars">
+                            <li>
+                                <div class="sidebar-username">@alex</div>
+                                No Traffic Maker
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
 </body>
 </html>
